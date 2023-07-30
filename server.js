@@ -10,8 +10,8 @@ const bodyParser = require("body-parser");
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
-const homePage = require("./server/index");
-const aboutPage = require("./server/about");
+const homePage = require("./routes/index");
+const aboutPage = require("./routes/about");
 
 app.use("/", homePage);
 app.use("/about", aboutPage);

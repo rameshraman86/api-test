@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js --watch server"
+    "start": "nodemon server.js --watch routes --watch server"
   },
   "repository": {
     "type": "git",

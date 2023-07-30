@@ -1,10 +1,11 @@
+"use strict";
+
 const express = require('express');
 const app = express.Router();
 
 
-app.get('/', function(req, res) {
-  res.send("Hello World!!!");
+app.get('/', (req, res) => {
+  res.send('This is the about page!!!');
 });
-
 
 module.exports = app;
